@@ -1,0 +1,553 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.intro{
+    margin-top:20px;
+    margin-bottom: 15%;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+h2.name {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color:#3ca59d;
+    margin-top: 10%;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+h3.iam {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    margin-top: 5%;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    font-size: 40px;
+}
+
+
+img.background {
+     width:40%;
+     float: right;
+     margin-right: 150px;
+}
+
+
+.mainmenu{
+    float: center;
+    display: block;
+    text-align: center;
+    font-size: 17px; 
+    line-height:32px;
+    background-color: #e79c2a;
+    padding: 5px 0 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+ul.mainmenu{
+   margin-top:10px;
+}
+
+.mainmenu li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+.mainmenu a{
+    text-decoration:none;
+    color:#fff;
+    padding: 8px;
+    
+}
+
+nav ul li a:hover{
+    color:#5a3d55;
+    transition:.9s;
+    text-shadow: -.50px -.25px 0 #5a3d55, 
+                .25px .25px #5a3d55;
+
+}
+
+nav ul li a:before{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:after{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.aboutsection{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+h2.about{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin-top: 5%;
+  font-size: 2.5em;
+  margin-left: 20%;
+}
+
+h3.mycontent{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  margin-left:20%;
+  font-size:1.5em;
+}
+
+img.id{
+  vertical-align: middle;
+  border-style: none;
+  width: 20%;
+  float: left;
+  margin-left:20%;
+  margin-top:-5%;
+  margin-right:2.5%
+}
+
+p.story{
+  margin-top: 0%;
+  text-align: justify;
+  margin-left: 5%;
+}
+
+h2.skills{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top: 5%;
+    margin-top: 10%;
+    font-size: 2.5em;
+    margin-left:20px;
+  
+}
+
+.skills{
+    text-align:left;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:20%;
+    margin-right: 20%;
+    position: justified;
+    font-size: 20px;
+
+}
+
+.bar{
+    background: #eeecda;
+    display:block;
+    height:3px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 2px;
+    overflow: hidden;
+    padding-top:5px;
+    padding-bottom:5px;
+
+    
+    
+}
+
+.bar span{
+    float: left;
+    background:#383e56;
+    height:4px;
+}
+
+.data{
+    width:75%;
+    animation: html 2s;
+}
+
+.web{
+    width:60%;
+    animation: html 2s;
+}
+.ba{
+    width:75%;
+    animation: html 2s;
+}
+.dt{
+    width:80%;
+    animation: html 2s;
+}
+.pd{
+    width:55%;
+    animation: html 2s; 
+}
+.strategy{
+    width:60%;
+    animation: html 2s; 
+}
+
+@keyframes html{
+ 0%{
+     width:0%;
+ }
+ 100%{
+     width:90%;
+ }
+}
+
+h2.resume{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top:5px;
+    font-size: 2.5em;
+    margin-left:20%;
+    font-size:2.5em;
+
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #383e56;
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 16px 0px 15px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #f7c5a8;
+    border: 4px solid #383e56;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid bd4b5b0;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent d4b5b0;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid d4b5b0;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent d4b5b0;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .firstcontent {
+    padding: 10px 30px;
+    background-color:#bb3b0e ;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-right:40px;
+  }
+
+  .content2 {
+    padding: 20px 30px;
+    background-color:#e71414;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-left:40px;
+  }
+
+  .content3 {
+    padding: 20px 30px;
+    background-color:#ff4301;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-right:40px;
+  }
+  
+  .content4 {
+    padding: 20px 30px;
+    background-color:#f37121;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-left:40px;
+  }
+
+  .content5 {
+    padding: 20px 30px;
+    background-color:#ef962d;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-right:40px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+
+.proj{
+	padding: 0;
+	margin: 50px;
+}
+.proj{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 42px;
+	background: #fff;
+}
+span{
+	margin: 0 15px;
+	line-height: .7;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+	animation: span 3s ease-in infinite alternate;
+}
+.proj{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.letter{
+	display: inline-flex;
+	height: 30px;
+	width: 27px;
+	/* border: 2.5px solid #FF1EAD; */
+	border: 2.35px solid black;
+	border-radius: 14px;
+	box-shadow:
+		0 0 2px rgba(0, 0, 0, .75),
+		inset 0 0 2px rgba(0, 0, 0, .45);
+
+	animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span {
+	0%,30%{ margin: 0 0px; }
+	70%,100%{ margin: 0 0px; }
+}
+@keyframes letter {
+	0%,30%{ width: 27px; }
+	70%,100%{ width: 30vw; }
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
+  margin-left: 30px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-left:50%;
+  padding: 5px 5px 5px 5px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding: 5px 5px 5px 5px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h2.hobby{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin-top: 5%;
+  font-size: 2.5em;
+  margin-left: 20%;
+}
+
+img.travel{
+  width: 25%;
+  float: left;
+  margin-top: 5%;
+ 
+ 
+}
+
+
